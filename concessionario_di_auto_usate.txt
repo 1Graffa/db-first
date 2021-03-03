@@ -1,0 +1,19 @@
+Database: Concessionario_di_auto_usate
+
+Tabella: Auto_usate
+
+Campi							Tipo di dato - ATTRIBUTI
+
+Id							numero - INT – PK – (AI – UNIQUE)
+ISBN							stringa - varchar(16) - NOT NULL - UNIQUE
+Nome_modello						stringa – varchar(50) - NOT NULL
+Anno							date - YEAR - NOT NULL
+Foto							stringa – varchar(255) - NOT NULL – DEFAULT(‘...’)
+Marca							stringa - varchar(16) - NOT NULL 
+KM							numero – INT - NOT NULL (si stima sia necessario poter mettere più di 255.000 km)
+Alimentazione						stringa - varchar(16) - NOT NULL 
+Cilindrata						stringa - varchar(16) - NOT NULL 
+Colore							stringa - varchar(16) - NOT NULL
+Prezzo							numero – float(9,2) - NOT NULL  (9.999.999,99) (stimiamo di non andare oltre offerte di 10 milioni di euro)
+Disponibilità						booleano (1=sì, 0=no) NOT NULL DEFAULT(Sì)
+Possibilita_affitto					booleano (1=sì, 0=no) NOT NULL DEFAULT(No)
