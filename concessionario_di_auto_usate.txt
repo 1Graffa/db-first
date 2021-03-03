@@ -5,7 +5,6 @@ Tabella: Auto_usate
 Campi							Tipo di dato - ATTRIBUTI
 
 Id							numero - INT – PK – (AI – UNIQUE)
-ISBN							stringa - varchar(16) - NOT NULL - UNIQUE
 Nome_modello						stringa – varchar(50) - NOT NULL
 Anno							date - YEAR - NOT NULL
 Foto							stringa – varchar(255) - NOT NULL – DEFAULT(‘...’)
