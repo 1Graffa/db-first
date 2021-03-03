@@ -15,5 +15,5 @@ Alimentazione						stringa - varchar(16) - NOT NULL
 Cilindrata						stringa - varchar(16) - NOT NULL 
 Colore							stringa - varchar(16) - NOT NULL
 Prezzo							numero – float(9,2) - NOT NULL  (9.999.999,99) (stimiamo di non andare oltre offerte di 10 milioni di euro)
-Disponibilità						booleano (1=sì, 0=no) NOT NULL DEFAULT(Sì)
-Possibilita_affitto					booleano (1=sì, 0=no) NOT NULL DEFAULT(No)
+Disponibilità						TINYINT NOT NULL
+Possibilita_affitto					TINYINT NOT NULL 
